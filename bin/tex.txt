@@ -1,0 +1,714 @@
+_chunk_jungle_south_island_k_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_south_island_k_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_east_island_e_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_east_island_e_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_west_island_d_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_west_island_d_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_south_island_e_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_south_island_e_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_base_north_shop_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_base_north_shop_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_north_island_j_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_north_island_j_alpha_target_3dcuv_atlas_color copy.dds
+
+
+hgkghj_pasted__pasted__pasted__pasted__test_bases_summoner_platform8
+0
+16
+0 unq_base_summoner_platform_d.dds
+
+
+_chunk_base_south_walls_d_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_base_south_walls_d_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_north_b_Alpha_Target_3dcUV_Atlas_color_copy
+0
+20
+0 _chunk_periph_north_b_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_west_island_i_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_west_island_i_alpha_target_3dcuv_atlas_color copy.dds
+
+
+bk_distant_horizon_a4
+0
+48
+0 bk_distant_horizon_a.dds
+
+
+lambert174501
+0
+16
+0 periphcards_01.dds
+
+
+_chunk_periph_base_north_north_b_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_base_north_north_b_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_base_south_south_b_Alpha_Target_3dcUV_Atlas_color_copy
+0
+20
+0 _chunk_periph_base_south_south_b_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_north_island_g_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_north_island_g_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_south_island_g_Alpha_Target_3dcUV_Atlas_color_copy
+0
+20
+0 _chunk_jungle_south_island_g_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_base_south_walls_c_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_base_south_walls_c_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_north_island_l_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_north_island_l_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_west_c_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_west_c_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_south_island_h_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_south_island_h_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_east_a_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_east_a_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_north_d_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_north_d_alpha_target_3dcuv_atlas_color copy.dds
+
+
+flora_wall_flowers48
+0
+16
+0 flora_wall_flowers.dds
+
+
+_chunk_periph_base_north_north_a_Alpha_Target_3dcUV_Atlas_color_copy
+0
+20
+0 _chunk_periph_base_north_north_a_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_base_north_walls_g_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_base_north_walls_g_alpha_target_3dcuv_atlas_color copy.dds
+
+
+hing_temp_LM_Grnd_Terrain_G_Shader
+0
+24
+0 grnd_terrain_g.dds
+
+
+_chunk_periph_north_c_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_north_c_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_north_e_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_north_e_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_north_island_i_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_north_island_i_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_base_north_walls_d_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_base_north_walls_d_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_east_island_b_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_east_island_b_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_east_island_h_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_east_island_h_alpha_target_3dcuv_atlas_color copy.dds
+
+
+pasted__vista_nw_24
+0
+16
+0 vista_nw_4.dds
+
+
+_chunk_periph_north_g_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_north_g_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_southeast_d_Alpha_Target_3dcUV_Atlas_color_copy
+0
+20
+0 _chunk_periph_southeast_d_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_west_island_h_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_west_island_h_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_north_island_h_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_north_island_h_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_north_f_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_north_f_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_south_island_i_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_south_island_i_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_base_south_walls_f_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_base_south_walls_f_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_west_a_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_west_a_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_base_south_platform_Alpha_Target_3dcUV_Atlas_color_copy
+0
+20
+0 _chunk_base_south_platform_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_north_island_b_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_north_island_b_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_north_island_a_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_north_island_a_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_west_e_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_west_e_alpha_target_3dcuv_atlas_color copy.dds
+
+
+pali_col_foliage_b_alpha1
+0
+20
+0 pali_colonnade_foliage_b.dds
+
+
+_chunk_periph_base_north_northeast_b_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_base_north_northeast_b_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_west_island_f_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_west_island_f_alpha_target_3dcuv_atlas_color copy.dds
+
+
+lambert174880
+0
+16
+0 pali_colonnade_foliage_d.dds
+
+
+_chunk_jungle_east_island_c_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_east_island_c_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_north_island_e_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_north_island_e_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_west_island_a_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_west_island_a_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_west_island_g_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_west_island_g_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_south_e_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_south_e_alpha_target_3dcuv_atlas_color copy.dds
+
+
+jungleW_bush_A_lambert172828
+0
+16
+0 unq_junglew_islei_bush_a.dds
+
+
+_chunk_base_south_walls_b_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_base_south_walls_b_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_south_f_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_south_f_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_north_island_c_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_north_island_c_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_south_island_a_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_south_island_a_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_west_island_c_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_west_island_c_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_north_island_f_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_north_island_f_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_base_north_northeast_a_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_base_north_northeast_a_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_southeast_e_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_southeast_e_alpha_target_3dcuv_atlas_color copy.dds
+
+
+LM_lambert27032
+0
+24
+0 grnd_terrain_n.dds
+
+
+_chunk_jungle_east_island_a_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_east_island_a_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_south_island_d_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_south_island_d_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_north_island_d_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_north_island_d_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_south_island_f_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_south_island_f_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_base_north_arches_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_base_north_arches_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_south_g_Alpha_Target_3dcUV_Atlas_color_copy
+0
+20
+0 _chunk_periph_south_g_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_east_island_f_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_east_island_f_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_south_island_c_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_south_island_c_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_east_island_d_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_east_island_d_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_east_b_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_east_b_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_west_d_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_west_d_alpha_target_3dcuv_atlas_color copy.dds
+
+
+lm_Grnd_Terrain_A_Shader
+0
+24
+0 grnd_terrain_a.dds
+
+
+hing_temp_lm_Grnd_Terrain_V_Shader
+0
+24
+0 grnd_terrain_v.dds
+
+
+hing_temp_lm_Grnd_Terrain_I_Shader
+0
+24
+0 grnd_terrain_i.dds
+
+
+hing_temp_LM_Grnd_Terrain_R_Shader1
+0
+24
+0 grnd_terrain_r.dds
+
+
+grnd_terrain_x
+0
+16
+0 grnd_terrain_x.dds
+
+
+hing_temp_lm_Grnd_Terrain_H_Shader
+0
+24
+0 grnd_terrain_h.dds
+
+
+hing_temp_lm_Grnd_Terrain_D_Shader
+0
+24
+0 grnd_terrain_d.dds
+
+
+lm_Grnd_Terrain_L_Shader1
+0
+24
+0 grnd_terrain_l.dds
+
+
+hing_temp_lm_Grnd_Terrain_F_Shader1
+0
+24
+0 grnd_terrain_f.dds
+
+
+lm_Grnd_Terrain_T_Shader1
+0
+24
+0 grnd_terrain_t.dds
+
+
+lm_Grnd_Terrain_C_Shader2
+0
+24
+0 grnd_terrain_c.dds
+
+
+lm_Grnd_Terrain_W_Shader4
+0
+24
+0 grnd_terrain_w.dds
+
+
+lm_Grnd_Terrain_Q_Shader3
+0
+24
+0 grnd_terrain_q.dds
+
+
+hing_temp_lm_Grnd_Terrain_S_Shader1
+0
+24
+0 grnd_terrain_s.dds
+
+
+hing_temp_lm_Grnd_Terrain_P_Shader
+0
+24
+0 grnd_terrain_p.dds
+
+
+hing_temp_lm_Grnd_Terrain_O_Shader
+0
+24
+0 grnd_terrain_o.dds
+
+
+hing_temp_lm_Grnd_Terrain_J_Shader
+0
+24
+0 grnd_terrain_j.dds
+
+
+hing_temp_lm_Grnd_Terrain_K_Shader
+0
+24
+0 grnd_terrain_k.dds
+
+
+hing_temp_lm_Grnd_Terrain_M_Shader
+0
+24
+0 grnd_terrain_m.dds
+
+
+_chunk_base_north_platform_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_base_north_platform_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_north_h_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_north_h_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_east_island_i_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_east_island_i_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_south_island_l_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_south_island_l_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_south_island_j_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_south_island_j_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_north_island_k_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_north_island_k_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_west_island_e_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_west_island_e_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_southeast_a_Alpha_Target_3dcUV_Atlas_color_copy
+0
+20
+0 _chunk_periph_southeast_a_alpha_target_3dcuv_atlas_color copy.dds
+
+
+lm_bases_Shader_a3
+0
+24
+0 grnd_north_base.dds
+
+
+grnd_north_base
+0
+16
+0 grnd_north_base.dds
+
+
+struc_stairs_north_base_pali_a
+0
+16
+0 struc_stairs_north_base_pali_a.dds
+
+
+lambert27184
+0
+16
+0 struc_base_mage_wall_molding.dds
+
+
+_chunk_base_north_walls_f_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_base_north_walls_f_alpha_target_3dcuv_atlas_color copy.dds
+
+
+pasted__struc_stairs_base_pali_a
+0
+16
+0 struc_stairs_base_pali_a.dds
+
+
+pasted__pasted__lm_bases_Shader_a4
+0
+24
+0 grnd_south_base.dds
+
+
+LM_Grnd_Terrain_B_Shader
+0
+24
+0 grnd_terrain_b.dds
+
+
+_chunk_jungle_south_island_b_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_south_island_b_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_west_island_b_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_west_island_b_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_base_north_walls_b_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_base_north_walls_b_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_east_c_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_east_c_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_base_south_west_a_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_base_south_west_a_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_jungle_east_island_g_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_jungle_east_island_g_alpha_target_3dcuv_atlas_color copy.dds
+
+
+grnd_terrain_y
+0
+16
+0 grnd_terrain_y.dds
+
+
+_chunk_periph_southeast_c_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_southeast_c_alpha_target_3dcuv_atlas_color copy.dds
+
+
+_chunk_periph_north_a_Alpha_Target_3dcUV_Atlas_color_copy2
+0
+20
+0 _chunk_periph_north_a_alpha_target_3dcuv_atlas_color copy.dds
+
+

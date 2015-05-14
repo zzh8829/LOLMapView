@@ -1,0 +1,427 @@
+MushroomPatch02_
+0
+16
+0 mushroompatch02.dds
+
+lambert176
+0
+16
+0 rock_lane.dds
+
+order_ground_mix2_decalVersion3_no_shadow
+1
+17
+0 order_ground_mix2.dds
+
+grasstuft_decalVersion3_no_shadow
+1
+16
+0 order_base_decal_mid.dds
+
+lambert17199
+0
+16
+0 stonehenge_03.dds
+
+Tree02_
+0
+16
+0 tree02_.dds
+
+lambert167
+0
+16
+0 foliage_sr_leaves.dds
+
+lambert17201
+0
+16
+0 stonehenge_revised_02.dds
+
+Flower_Order1
+0
+16
+0 flower_sr_order1.dds
+
+Flowerz4
+0
+16
+0 flowerz4.dds
+
+OrderTorch01_
+0
+16
+0 ordertorch01.dds
+
+New_Rocks_lambert172
+0
+16
+0 stonehenge_revised.dds
+
+new_stone_road_decalVersion3_no_shadow
+1
+16
+0 new_stone_road.dds
+
+ChaosHouse02_
+0
+16
+0 chaoshouse02.dds
+
+SR_Jungleb
+3
+17
+0 Chaos_dirt.dds
+1 blend1_sr_2_tx_bm_blend1_sr_3_tx_bm_blend1_sr_4_tx_bm.dds
+2 gravel_stone_TX_CM.dds
+4 order_dirt.dds
+6 grass_TX_CM.dds
+
+ground_RiverBed_cliff_blend_1
+0
+17
+0 riverbed_cliff_blend.dds
+
+firepit_ash_decalVersion3_no_shadow
+1
+16
+0 sr_firepit_ash_decal_tx_dm.dds
+
+OrderGate_1
+0
+16
+0 ordergate.dds
+
+Plant01_
+0
+16
+0 plant01.dds
+
+Flower_Xaos2
+0
+16
+0 flower_sr_xaos2.dds
+
+Fence01_
+0
+16
+0 fence01.dds
+
+Tree01_md_
+0
+16
+0 tree01_md.dds
+
+lambert144_decalVersion3_no_shadow
+1
+16
+0 inhibitor_stonebase.dds
+
+TallRock02_
+0
+16
+0 tallrock02.dds
+
+TorchSet01_
+0
+16
+0 torchset01.dds
+
+Flower_Order2
+0
+16
+0 flower_sr_order2.dds
+
+lambert150
+0
+16
+0 stone_steps.dds
+
+flowerp_decalVersion3_no_shadow1
+1
+16
+0 decal_purple_flower.dds
+
+Grasss
+0
+17
+0 wallofgrass.dds
+
+Wall_of_Grass5
+2
+16
+0 wallofgrass.dds
+
+TombStone01_TombStone01_
+0
+16
+0 tombstone01.dds
+
+flowerb_decalVersion3_no_shadow
+1
+16
+0 decal_blue_flower.dds
+
+MushroomPatch03_order
+0
+16
+0 mushroompatch03.dds
+
+Flower_Xaos1
+0
+16
+0 flower_sr_xaos1.dds
+
+ChaosShrine_Mat
+0
+16
+0 chaos_shrine.dds
+
+Shop_NEW_xaos_lambert8013
+0
+16
+0 barrel_tx_dm.dds
+
+Shop_NEW_xaos_lambert8014
+0
+16
+0 shield&ladder&book_stack&sign&shield_tx_dm.dds
+
+Shop_NEW_xaos_lambert8070
+0
+16
+0 pole_with_3_helmets_tx_dm.dds
+
+OrderPantheon_
+0
+16
+0 orderpantheon.dds
+
+base_chasm1_decalVersion3_no_shadow
+1
+16
+0 base_chasm1.dds
+
+shrineVine_
+0
+16
+0 shrinevine.dds
+
+mushroom_cap
+0
+16
+0 mushroom_cap1.dds
+
+order_tile_floor_border_decalVersion3_no_shadow
+1
+16
+0 order_tile_floor_border.dds
+
+lanetowerdcl_decalVersion3_no_shadow
+1
+16
+0 bluetower_decal.dds
+
+turret_stoneBase_
+1
+16
+0 turret_stonebase.dds
+
+fire_cauldron
+0
+16
+0 fire_cauldron.dds
+
+SR_Lanes
+3
+17
+0 SR_Lane_Tile.dds
+1 blend1_sr_2_tx_bm_blend1_sr_3_tx_bm_blend1_sr_4_tx_bm.dds
+2 gravel_stone_TX_CM.dds
+4 order_dirt.dds
+6 grass_TX_CM.dds
+
+Tree01_Burned_
+0
+16
+0 tree01_burned.dds
+
+DryBush01_
+0
+16
+0 drybush01.dds
+
+nexus_stoneBase_decalVersion3_no_shadow
+1
+16
+0 nexus_stonebase.dds
+
+shop_base_
+0
+16
+0 shop_base.dds
+
+base_chasm2_decalVersion3_no_shadow
+1
+16
+0 base_chasm2.dds
+
+order_ground_moss_patch1_decalVersion3_no_shadow
+1
+17
+0 order_ground_moss_patch1.dds
+
+order_tile_floor_mark1_decalVersion3_no_shadow
+1
+16
+0 order_tile_floor_mark2.dds
+
+lambert175
+0
+16
+0 creep_camp_base.dds
+
+SwampLog01_1
+0
+16
+0 swamplog01.dds
+
+river_corner_place_river_corner_
+0
+16
+0 river_corner.dds
+
+lambert177
+0
+16
+0 mushroom_cap2.dds
+
+ground_Chaos_dirt_grass_blend_1
+0
+17
+0 chaos_dirt_grass_blend.dds
+
+ground_Chaos_dirt_1
+0
+17
+0 chaos_dirt.dds
+
+GoodStatue01_
+0
+16
+0 goodstatue01.dds
+
+lambert4
+0
+16
+0 shop_trol_prop.dds
+
+Flowerz3
+0
+16
+0 flowerz3.dds
+
+SR_Base
+3
+17
+0 order_tile_floor.dds
+1 blend1_sr_2_tx_bm_blend1_sr_3_tx_bm_blend1_sr_4_tx_bm.dds
+2 gravel_stone_TX_CM.dds
+4 order_dirt.dds
+6 grass_TX_CM.dds
+
+Shop_NEW_xaos_lambert8094
+0
+16
+0 wagon_tx_dm.dds
+
+turret_stoneBase_hq_
+1
+16
+0 turret_stonebase_hq.dds
+
+Flower012_
+0
+16
+0 flower012.dds
+
+Sign01_
+0
+16
+0 sign01.dds
+
+Order_seam_decalVersion3_no_shadow
+1
+16
+0 order_seam.dds
+
+Chaos_stones_
+0
+16
+0 chaos_stonesb.dds
+
+wall_ruin_final_Btown_Brown_
+0
+16
+0 btown_brown.dds
+
+statue_warrior
+0
+16
+0 shop_diffuse.dds
+
+Bcolumn_blue_vine_
+0
+16
+0 bcolumn_blue_vine.dds
+
+base_center_mark2_
+1
+16
+0 base_center_mark3.dds
+
+OrderShrine_Mat
+0
+16
+0 shrine.dds
+
+TreeLogFallen03_
+0
+16
+0 treelogfallen03.dds
+
+v_decalVersion3_no_shadow
+1
+16
+0 chaos_root_base_decal_mid.dds
+
+lambert8094
+0
+16
+0 wagon_tx_dm.dds
+
+chaosGate_
+0
+16
+0 chaosgate.dds
+
+ChaosShrineWall02_
+0
+16
+0 chaosshrinewall02.dds
+
+lambert17202
+0
+16
+0 base_stone_steps.dds
+
+TreeStump02_
+0
+16
+0 treestump02.dds
+
+SwampTree_01_
+0
+16
+0 swamptree_01.dds
+

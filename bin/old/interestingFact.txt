@@ -1,0 +1,11 @@
+
+Texture naming...
+for example:
+	Zilean_desert _TX_CM.dds
+	Zilean_hippie_TX_CM.dds
+
+This doesn't make any scene at all...
+
+The Crystal Scar is realy a forgeten map..
+even the file format is differnt
+riot haven't update the map for a long time.
