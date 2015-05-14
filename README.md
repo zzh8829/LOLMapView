@@ -1,6 +1,10 @@
 # LOLMapView
 League of Legends Map Viewer
 
+Demo
+==========
+![](https://raw.githubusercontent.com/zzh8829/LOLMapView/master/bin/screenshot.bmp)
+
 Build & Run
 ===========
 build and run with make. (SConstruct is not working at this moment)
