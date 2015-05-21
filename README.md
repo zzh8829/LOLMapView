@@ -3,6 +3,7 @@ League of Legends Map Viewer
 
 Demo
 ==========
+[![Click for video](http://img.youtube.com/vi/OFQHyHn6XHk/0.jpg)](http://www.youtube.com/watch?v=OFQHyHn6XHk)
 ![](https://raw.githubusercontent.com/zzh8829/LOLMapView/master/bin/screenshot.bmp)
 
 Build & Run
