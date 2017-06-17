@@ -1,3 +1,6 @@
+bin/main
+bin/main.exe
+
 # Compiled Object files
 *.slo
 *.lo

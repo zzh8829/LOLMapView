@@ -1,18 +1,24 @@
 LIB_OSX		= m iconv objc
 
-INC_DIR_OSX	= /usr/local/include
-LIB_DIR_OSX	= /usr/local/lib
+INC_DIR_OSX	= /usr/local/include /usr/local/Cellar/glew/2.0.0/include /usr/local/Cellar/sdl2_ttf/2.0.14/include/ /usr/local/Cellar/sdl2_image/2.0.1_2/include/
+LIB_DIR_OSX	= /usr/local/lib /usr/local/Cellar/glew/2.0.0/lib /usr/local/Cellar/sdl2_ttf/2.0.14/lib/ /usr/local/Cellar/sdl2_image/2.0.1_2/lib/
 
-LIB_SDL2	= SDL2 SDL2main
+LIB_SDL2	= SDL2 SDL2main GLEW SDL2_ttf SDL2_image
 
 INC_DIR_ALL = ${INC_DIR} ${INC_DIR_OSX}
 
 LIB_DIR_ALL	= ${LIB_DIR_OSX}
 LIB_ALL		= ${LIB_SDL2} ${LIB_OSX}
 
-LIB_EXTRA	= -framework Cocoa -framework OpenGL  -framework ForceFeedback \
-				-framework Carbon -framework IOKit -framework CoreAudio \
-				-framework AudioToolbox -framework,AudioUnit
+LIB_EXTRA	= -framework Cocoa \
+				-framework OpenGL \
+				-framework ForceFeedback \
+				-framework Carbon \
+				-framework IOKit \
+				-framework CoreAudio \
+				-framework CoreVideo \
+				-framework AudioToolbox \
+				-framework AudioUnit
 
 run:
 	cd bin && ./main

@@ -2,7 +2,6 @@
 # Zihao Zhang
 # :D
 
-CC			= gcc
 CXX			= g++
 
 INC_DIR		= include
@@ -39,12 +38,15 @@ EXE 		= ${BIN_DIR}/main
 
 .PHONY: clean run
 
-all : ${EXE} run
+all : DIRS ${EXE} run
+
+DIRS:
+	mkdir -p ${BUILD_DIR}
 
 ${EXE} : ${OBJS}
 	${CXX} ${OBJS} ${LIBFLAG} -o $@
 
 ${BUILD_DIR}/%.o : ${SRC_DIR}/%.cpp
-	${CXX} ${CXXFLAGS} -c -o $@ $< 
+	${CXX} ${CXXFLAGS} -c -o $@ $<
 
 .DEFAULT_GOAL := all

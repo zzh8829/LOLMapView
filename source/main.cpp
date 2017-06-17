@@ -68,7 +68,7 @@ GLuint gdtexture(const char* file)
 		sf->w, sf->h, 0,           /* width, height, border */
 		GL_RGBA, GL_UNSIGNED_BYTE,   /* external format, type */
 		sf->pixels                      /* pixels */
-	); 
+	);
 	glGenerateMipmap(GL_TEXTURE_2D);
 
 	SDL_FreeSurface(sf);
@@ -82,18 +82,18 @@ SDL_Surface* flipVert(SDL_Surface* sfc)
 		sfc->format->BytesPerPixel * 8, sfc->format->Rmask, sfc->format->Gmask,
 		sfc->format->Bmask, sfc->format->Amask);
 	if (result == NULL) return NULL;
- 
+
 	uint8_t* pixels = (uint8_t*) sfc->pixels;
 	uint8_t* rpixels = (uint8_t*) result->pixels;
- 
+
 	uint32_t pitch = sfc->pitch;
 	uint32_t pxlength = pitch*sfc->h;
- 
+
 	for(int line = 0; line < sfc->h; ++line) {
 		uint32_t pos = line * pitch;
 		memcpy(&rpixels[pos], &pixels[(pxlength-pos)-pitch], pitch);
 	}
- 
+
 	return result;
 }
 
@@ -105,7 +105,7 @@ void screenshot()
 
 	SDL_Surface * flip = flipVert(sf);
 	SDL_SaveBMP(flip,"screenshot.bmp");
-	
+
 	SDL_FreeSurface(sf);
 	SDL_FreeSurface(flip);
 }
@@ -113,15 +113,15 @@ void screenshot()
 Program* map_default;
 Program* map_four_blend;
 
-GLint fmvp; 
+GLint fmvp;
 GLint ftex0;
 GLint ftex1;
 GLint ftex2;
 GLint ftex3;
 GLint ftex4;
 
-GLint dtex; 
-GLint dmvp; 
+GLint dtex;
+GLint dmvp;
 
 Program* split_1;
 GLint s1mvp;
@@ -151,7 +151,7 @@ public:
 				if(map->materials[i].textures[j].filename[0])
 				{
 					string name = map->materials[i].textures[j].filename;
-					name = folder + "Scene/Textures/" + 
+					name = folder + "Scene/Textures/" +
 						name.substr(0,name.size()-3) + "png";
 					if(map->materials[i].flag1!=1)
 					{
@@ -192,13 +192,13 @@ public:
 						vt.push_back(Texture(texture_));
 						SDL_FreeSurface(sf);
 					}
-					
+
 				} else {
 					vt.push_back(Texture());
 				}
 			}
 			texs.push_back(vt);
-		} 
+		}
 		for(int m=0;m!=map->num_vertex_list;m++)
 		{
 			vbufs.push_back(
@@ -226,7 +226,7 @@ public:
 				// Four Blend
 				map_four_blend->Use();
 				glUniformMatrix4fv(fmvp, 1, GL_TRUE, mvp._m);
-				
+
 				glUniform1i(ftex0,0);
 				glUniform1i(ftex1,1);
 				glUniform1i(ftex2,2);
@@ -244,9 +244,9 @@ public:
 				glActiveTexture(GL_TEXTURE4);
 				glBindTexture(GL_TEXTURE_2D,texs[map->models[m].material][6].GetTexture());
 
-				glBindBuffer(GL_ARRAY_BUFFER,  
+				glBindBuffer(GL_ARRAY_BUFFER,
 					vbufs[map->models[m].model[0].vertex_index]);
-				 
+
 				glVertexAttribPointer(
 					Program::POSITION,
 					3,
@@ -255,7 +255,7 @@ public:
 					sizeof(GLfloat)*11,
 					(const GLvoid*)(0)
 				);
-				
+
 				glVertexAttribPointer(
 					Program::UV0,
 					2,
@@ -273,7 +273,7 @@ public:
 					sizeof(GLfloat)*11,
 					(const GLvoid*)(sizeof(GLfloat)*8)
 				);
-				
+
 
 				glEnableVertexAttribArray(Program::POSITION);
 				glEnableVertexAttribArray(Program::UV0);
@@ -297,7 +297,7 @@ public:
 		}
 
 		for(int m=0;m!=map->num_model;m++)
-		{ 
+		{
 			*/
 			if(map->materials[map->models[m].material].flag1 == 1) {
 				//continue;
@@ -307,9 +307,9 @@ public:
 
 				glActiveTexture(GL_TEXTURE0);
 				glBindTexture(GL_TEXTURE_2D,texs[map->models[m].material][0].GetTexture());
-				glUniform1i(dtex,0);	
-				
-				glBindBuffer(GL_ARRAY_BUFFER,  
+				glUniform1i(dtex,0);
+
+				glBindBuffer(GL_ARRAY_BUFFER,
 					vbufs[map->models[m].model[0].vertex_index]);
 
 				static int strides[] = {10,9,9,11};
@@ -321,7 +321,7 @@ public:
 				//if(map->materials[map->models[m].material].flag2 !=17 ) continue;
 
 				//if(map->materials[map->models[m].material].flag1 ==3 ) uvoff = 6;
-				
+
 				glVertexAttribPointer(
 					Program::POSITION,
 					3,
@@ -330,7 +330,7 @@ public:
 					sizeof(GLfloat)*stride,
 					(const GLvoid*)(0)
 				);
-				
+
 				glVertexAttribPointer(
 					Program::UV0,
 					2,
@@ -339,7 +339,7 @@ public:
 					sizeof(GLfloat)*stride,
 					(const GLvoid*)(sizeof(GLfloat)*uvoff)
 				);
-				
+
 
 				glEnableVertexAttribArray(Program::POSITION);
 				glEnableVertexAttribArray(Program::UV0);
@@ -354,10 +354,10 @@ public:
 				);
 				glDisableVertexAttribArray(Program::POSITION);
 				glDisableVertexAttribArray(Program::UV0);
-			} 
+			}
 		/*
 		}
-		
+
 		for(int m=0;m!=map->num_model;m++)
 		{
 			*/
@@ -370,9 +370,9 @@ public:
 
 				glActiveTexture(GL_TEXTURE0);
 				glBindTexture(GL_TEXTURE_2D,texs[map->models[m].material][0].GetTexture());
-				glUniform1i(dtex,0);	
-				
-				glBindBuffer(GL_ARRAY_BUFFER,  
+				glUniform1i(dtex,0);
+
+				glBindBuffer(GL_ARRAY_BUFFER,
 					vbufs[map->models[m].model[0].vertex_index]);
 
 				int stride;
@@ -387,7 +387,7 @@ public:
 				//if(map->materials[map->models[m].material].flag2 !=17 ) continue;
 
 				//if(map->materials[map->models[m].material].flag1 ==3 ) uvoff = 6;
-				
+
 				glVertexAttribPointer(
 					Program::POSITION,
 					3,
@@ -396,7 +396,7 @@ public:
 					sizeof(GLfloat)*stride,
 					(const GLvoid*)(0)
 				);
-				
+
 				glVertexAttribPointer(
 					Program::UV0,
 					2,
@@ -405,7 +405,7 @@ public:
 					sizeof(GLfloat)*stride,
 					(const GLvoid*)(sizeof(GLfloat)*6)
 				);
-				
+
 
 				glEnableVertexAttribArray(Program::POSITION);
 				glEnableVertexAttribArray(Program::UV0);
@@ -435,9 +435,9 @@ public:
 
 				glActiveTexture(GL_TEXTURE0);
 				glBindTexture(GL_TEXTURE_2D,texs[map->models[m].material][0].GetTexture());
-				glUniform1i(dtex,0);	
-				
-				glBindBuffer(GL_ARRAY_BUFFER,  
+				glUniform1i(dtex,0);
+
+				glBindBuffer(GL_ARRAY_BUFFER,
 					vbufs[map->models[m].model[0].vertex_index]);
 
 				int stride = 9;
@@ -446,7 +446,7 @@ public:
 				//if(map->materials[map->models[m].material].flag2 !=17 ) continue;
 
 				//if(map->materials[map->models[m].material].flag1 ==3 ) uvoff = 6;
-				
+
 				glVertexAttribPointer(
 					Program::POSITION,
 					3,
@@ -455,7 +455,7 @@ public:
 					sizeof(GLfloat)*stride,
 					(const GLvoid*)(0)
 				);
-				
+
 				glVertexAttribPointer(
 					Program::UV0,
 					2,
@@ -464,7 +464,7 @@ public:
 					sizeof(GLfloat)*stride,
 					(const GLvoid*)(sizeof(GLfloat)*6)
 				);
-				
+
 
 				glEnableVertexAttribArray(Program::POSITION);
 				glEnableVertexAttribArray(Program::UV0);
@@ -502,9 +502,9 @@ public:
 	GLuint rboId;
 	GLuint fboId;
 
-	FrameBuffer() 
+	FrameBuffer()
 	{
-		
+
 		glGenTextures(1, &textureId);
 		glBindTexture(GL_TEXTURE_2D, textureId);
 		glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
@@ -516,7 +516,7 @@ public:
 		             GL_RGBA, GL_UNSIGNED_BYTE, 0);
 		glBindTexture(GL_TEXTURE_2D, 0);
 
-		
+
 		glGenRenderbuffers(1, &rboId);
 		glBindRenderbuffer(GL_RENDERBUFFER, rboId);
 		glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH_COMPONENT,
@@ -527,7 +527,7 @@ public:
 		glBindFramebuffer(GL_FRAMEBUFFER, fboId);
 
 		// attach the texture to FBO color attachment point
-		glFramebufferTexture2D(GL_FRAMEBUFFER,        // 1. fbo target: GL_FRAMEBUFFER 
+		glFramebufferTexture2D(GL_FRAMEBUFFER,        // 1. fbo target: GL_FRAMEBUFFER
 		                       GL_COLOR_ATTACHMENT0,  // 2. attachment point
 		                       GL_TEXTURE_2D,         // 3. tex target: GL_TEXTURE_2D
 		                       textureId,             // 4. tex ID
@@ -570,7 +570,7 @@ public:
 	TextRenderer()
 	{}
 
-	void Render(string text, SDL_Color color, int x,int y, int size) 
+	void Render(string text, SDL_Color color, int x,int y, int size)
 	{
 		glMatrixMode(GL_MODELVIEW);
 		glPushMatrix();
@@ -644,7 +644,7 @@ int main (int argc, char* argv[])
 	TTF_Init();
 	TextRenderer* textrender = new TextRenderer;
 	// open pipe to ffmpeg's stdin in binary write mode
-	FILE* ffmpeg = _popen(cmd, "wb");
+	// FILE* ffmpeg = _popen(cmd, "wb");
 
 	int* buffer = new int[WIDTH*HEIGHT];
 
@@ -660,8 +660,8 @@ int main (int argc, char* argv[])
 	RiotMap map1("lol/LEVELS/Map1/");
 	RiotMap map11("lol/lolpbe/LEVELS/Map11/");
 	//RiotMap map12("lol/LEVELS/Map12/");
-#endif 
-	
+#endif
+
 	FrameBuffer map1frame;
 	FrameBuffer map11frame;
 
@@ -672,14 +672,14 @@ int main (int argc, char* argv[])
 	cgGLEnableProfile(CG_PROFILE_GLSLV);
 	cgGLEnableProfile(CG_PROFILE_GLSLF);
 
-	ifstream ifs("Shaders/LIT_VS.vs_2_0",ios::binary);	
+	ifstream ifs("Shaders/LIT_VS.vs_2_0",ios::binary);
 	ifs.seekg(0,ios::end);
 	size_t size = ifs.tellg();
 	ifs.seekg(0,ios::beg);
 	char* vs = new char[size+1];
 	ifs.read(vs,size);
 	vs[size]=0;
-	
+
 	CGprogram vsp = cgCreateProgram(cgContext,CG_SOURCE,vs,CG_PROFILE_GLSLV,"main",NULL);
 	const char* wtf = cgGetProgramString(vsp,CG_COMPILED_PROGRAM);
 
@@ -720,12 +720,12 @@ int main (int argc, char* argv[])
 	s1tex0 = split_1->GetUniformLocation("Z_TEX0");
 	s1tex1 = split_1->GetUniformLocation("Z_TEX1");
 	s1mode = split_1->GetUniformLocation("MODE");
-	
+
 	Matrix4f projection,view,model,mvp;
 
 	projection = Matrix4f::CreatePerspective(45.0f, WIDTH/(float)HEIGHT , 1, 1e6);
 	model = Matrix4f::IDENTITY;
- 
+
 	Matrix4f mvps = Matrix4f::CreateOrthographic(0,1,0,1,-1,1);
 
 	window->SetRelativeMouseMode(true);
@@ -736,16 +736,16 @@ int main (int argc, char* argv[])
 	float FoV = 45.0f;
 	float moveSpeed = 3.0f;
 	float mouseSpeed = 0.0005f;
-	float zoomSpeed = 2.0f; 
+	float zoomSpeed = 2.0f;
 
 	float lastSec = Timer::GetTimeInSeconds();
- 
+
 #if 0
 	ofstream dump("model.txt");
 	//int list[] = {1,11,13};
 	//for(int i=0;i!= sizeof(list)/sizeof(list[0]);i++)
 	//int m = 2;
-	//{ 
+	//{
 	//	int m = list[i];
 	for(int m=0;m!=map->num_model;m++)
 	{
@@ -756,18 +756,18 @@ int main (int argc, char* argv[])
 		for(int j=0;j!=10;j++)
 			dump << map->models[m].b[j] << " ";
 		dump << endl;
-		dump << "\t" << 
-			map->models[m].model[0].vertex_index << " " << 
-			map->models[m].model[0].vertex_offset << " " << 
-			map->models[m].model[0].vertex_length << " " << 
-			map->models[m].model[0].index_index << " " << 
-			map->models[m].model[0].index_offset << " " << 
-			map->models[m].model[0].index_length << " " <<  endl << "\t" << 
-			map->models[m].model[1].vertex_index << " " << 
-			map->models[m].model[1].vertex_offset << " " << 
-			map->models[m].model[1].vertex_length << " " << 
-			map->models[m].model[1].index_index << " " << 
-			map->models[m].model[1].index_offset << " " << 
+		dump << "\t" <<
+			map->models[m].model[0].vertex_index << " " <<
+			map->models[m].model[0].vertex_offset << " " <<
+			map->models[m].model[0].vertex_length << " " <<
+			map->models[m].model[0].index_index << " " <<
+			map->models[m].model[0].index_offset << " " <<
+			map->models[m].model[0].index_length << " " <<  endl << "\t" <<
+			map->models[m].model[1].vertex_index << " " <<
+			map->models[m].model[1].vertex_offset << " " <<
+			map->models[m].model[1].vertex_length << " " <<
+			map->models[m].model[1].index_index << " " <<
+			map->models[m].model[1].index_offset << " " <<
 			map->models[m].model[1].index_length << " " <<  endl;
 
 		map->materials[map->models[m].material].dump(dump);
@@ -779,7 +779,7 @@ int main (int argc, char* argv[])
 			for(int i=0;i!=9;i++)
 			{
 				int idx = map->index_lists[map->models[m].model[0].index_index].indices[map->models[m].model[0].index_offset+j];
-				
+
 				if(i==10)
 				{
 					union
@@ -930,7 +930,7 @@ int main (int argc, char* argv[])
 			up
 		);
 
-	
+
 		Matrix4f mvp = projection * view * model;
 
 		mvp.m02 = -mvp.m02;
@@ -939,7 +939,7 @@ int main (int argc, char* argv[])
 		mvp.m32 = -mvp.m32;
 
 		//glDepthMask(true);
-		
+
 		float t0 = Timer::GetTimeInSeconds();
 
 #if RENDERMAP
@@ -985,7 +985,7 @@ int main (int argc, char* argv[])
 			0,
 			(const GLvoid*)(0)
 		);
-		
+
 		glVertexAttribPointer(
 			Program::UV0,
 			2,
@@ -1006,12 +1006,12 @@ int main (int argc, char* argv[])
 		glUseProgram(0);
 
 		textrender->Render("CATT",SDL_BLUE,100,100,50);
-		
+
 		window->SwapBuffers();
 
 		//glReadPixels(0, 0, WIDTH, HEIGHT, GL_RGBA, GL_UNSIGNED_BYTE, buffer);
 		//fwrite(buffer, sizeof(int)*WIDTH*HEIGHT, 1, ffmpeg);
 	}
-	_pclose(ffmpeg);
+	// _pclose(ffmpeg);
 	return 0;
 }
