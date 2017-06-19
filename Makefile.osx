@@ -3,7 +3,7 @@ LIB_OSX		= m iconv objc
 INC_DIR_OSX	= /usr/local/include /usr/local/Cellar/glew/2.0.0/include /usr/local/Cellar/sdl2_ttf/2.0.14/include/ /usr/local/Cellar/sdl2_image/2.0.1_2/include/
 LIB_DIR_OSX	= /usr/local/lib /usr/local/Cellar/glew/2.0.0/lib /usr/local/Cellar/sdl2_ttf/2.0.14/lib/ /usr/local/Cellar/sdl2_image/2.0.1_2/lib/
 
-LIB_SDL2	= SDL2 SDL2main GLEW SDL2_ttf SDL2_image
+LIB_SDL2	=
 
 INC_DIR_ALL = ${INC_DIR} ${INC_DIR_OSX}
 
@@ -18,7 +18,10 @@ LIB_EXTRA	= -framework Cocoa \
 				-framework CoreAudio \
 				-framework CoreVideo \
 				-framework AudioToolbox \
-				-framework AudioUnit
+				-framework AudioUnit \
+        /usr/local/lib/libSDL2.a /usr/local/lib/libSDL2main.a /usr/local/lib/libGLEW.a /usr/local/lib/libSDL2_ttf.a /usr/local/lib/libSDL2_image.a /usr/local/lib/libpng.a /usr/local/lib/libjpeg.a /usr/local/lib/libfreetype.a /usr/local/lib/libtiff.a /usr/local/opt/bzip2/lib/libbz2.a /usr/local/opt/zlib/lib/libz.a /usr/local/lib/libwebp.a
+
+
 
 run:
 	cd bin && ./main
