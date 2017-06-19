@@ -2,7 +2,7 @@
 #define Z_VERTEXBUFFER_H_
 
 #include "Core.h"
-#include "gl/glew.h"
+#include "GL/glew.h"
 
 class VertexBuffer
 {

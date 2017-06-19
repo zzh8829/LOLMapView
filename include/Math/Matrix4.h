@@ -21,7 +21,7 @@ public:
 		Real m[4][4];
 		Real _m[16];
 	};
-	
+
 	// Default
 	Matrix4 ();
 
@@ -83,7 +83,7 @@ public:
 	Real Determinant () const;
 
 	static Matrix4 CreatePerspective (
-		Real const & fovy, Real const & aspect, 
+		Real const & fovy, Real const & aspect,
 		Real const & zNear, Real const & zFar);
 
 	static Matrix4 CreateLookAt (const Vector3<Real>& eye,
@@ -147,7 +147,7 @@ Matrix4<Real>::Matrix4 (const Real mat[16], bool rowMajor)
 {
 	if (rowMajor)
 	{
-		memcpy(_m,mat._m,sizeof(_m));
+		memcpy(_m,mat,sizeof(_m));
 	}
 	else
 	{
@@ -945,10 +945,10 @@ Real Matrix4<Real>::Determinant () const
 
 template <typename Real>
 Matrix4<Real> Matrix4<Real>::CreatePerspective (
-	Real const & fovy, Real const & aspect, 
+	Real const & fovy, Real const & aspect,
 	Real const & zNear, Real const & zFar)
 {
-	Real range = tan(Math<Real>::Radians(fovy / (Real)2)) * zNear;	
+	Real range = tan(Math<Real>::Radians(fovy / (Real)2)) * zNear;
 	Real left = -range * aspect;
 	Real right = range * aspect;
 	Real bottom = -range;
@@ -1028,30 +1028,30 @@ typedef Matrix4<float> Matrix4f;
 #endif
 
 /*
-	template <typename T> 
+	template <typename T>
 	detail::tmat4x4<T> translate(
 		detail::tmat4x4<T> const & m,
 		detail::tvec3<T> const & v);
-		
-	/// Builds a rotation 4 * 4 matrix created from an axis vector and an angle. 
-	/// 
+
+	/// Builds a rotation 4 * 4 matrix created from an axis vector and an angle.
+	///
 	/// @param m Input matrix multiplied by this rotation matrix.
 	/// @param angle Rotation angle expressed in radians if GLM_FORCE_RADIANS is define or degrees otherwise.
 	/// @param axis Rotation axis, recommanded to be normalized.
 	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	/// @see gtx_transform
-	/// @see - rotate(T angle, T x, T y, T z) 
-	/// @see - rotate(detail::tmat4x4<T> const & m, T angle, T x, T y, T z) 
-	/// @see - rotate(T angle, detail::tvec3<T> const & v) 
-	template <typename T> 
+	/// @see - rotate(T angle, T x, T y, T z)
+	/// @see - rotate(detail::tmat4x4<T> const & m, T angle, T x, T y, T z)
+	/// @see - rotate(T angle, detail::tvec3<T> const & v)
+	template <typename T>
 	detail::tmat4x4<T> rotate(
 		detail::tmat4x4<T> const & m,
-		T const & angle, 
+		T const & angle,
 		detail::tvec3<T> const & axis);
 
-	/// Builds a scale 4 * 4 matrix created from 3 scalars. 
-	/// 
+	/// Builds a scale 4 * 4 matrix created from 3 scalars.
+	///
 	/// @param m Input matrix multiplied by this scale matrix.
 	/// @param v Ratio of scaling for each axis.
 	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
@@ -1060,177 +1060,177 @@ typedef Matrix4<float> Matrix4f;
 	/// @see - scale(T x, T y, T z) scale(T const & x, T const & y, T const & z)
 	/// @see - scale(detail::tmat4x4<T> const & m, T x, T y, T z)
 	/// @see - scale(detail::tvec3<T> const & v)
-	template <typename T> 
+	template <typename T>
 	detail::tmat4x4<T> scale(
 		detail::tmat4x4<T> const & m,
 		detail::tvec3<T> const & v);
 
 	/// Creates a matrix for an orthographic parallel viewing volume.
-	/// 
-	/// @param left 
-	/// @param right 
-	/// @param bottom 
-	/// @param top 
-	/// @param zNear 
-	/// @param zFar 
+	///
+	/// @param left
+	/// @param right
+	/// @param bottom
+	/// @param top
+	/// @param zNear
+	/// @param zFar
 	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	/// @see - glm::ortho(T const & left, T const & right, T const & bottom, T const & top)
-	template <typename T> 
+	template <typename T>
 	detail::tmat4x4<T> ortho(
-		T const & left, 
-		T const & right, 
-		T const & bottom, 
-		T const & top, 
-		T const & zNear, 
+		T const & left,
+		T const & right,
+		T const & bottom,
+		T const & top,
+		T const & zNear,
 		T const & zFar);
 
 	/// Creates a matrix for projecting two-dimensional coordinates onto the screen.
-	/// 
-	/// @param left 
-	/// @param right 
-	/// @param bottom 
-	/// @param top 
+	///
+	/// @param left
+	/// @param right
+	/// @param bottom
+	/// @param top
 	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
     /// @see - glm::ortho(T const & left, T const & right, T const & bottom, T const & top, T const & zNear, T const & zFar)
-	template <typename T> 
+	template <typename T>
 	detail::tmat4x4<T> ortho(
-		T const & left, 
-		T const & right, 
-		T const & bottom, 
+		T const & left,
+		T const & right,
+		T const & bottom,
 		T const & top);
 
 	/// Creates a frustum matrix.
-	/// 
-	/// @param left 
-	/// @param right 
-	/// @param bottom 
-	/// @param top 
-	/// @param near 
-	/// @param far 
+	///
+	/// @param left
+	/// @param right
+	/// @param bottom
+	/// @param top
+	/// @param near
+	/// @param far
 	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
-	template <typename T> 
+	template <typename T>
 	detail::tmat4x4<T> frustum(
-		T const & left, 
-		T const & right, 
-		T const & bottom, 
-		T const & top, 
-		T const & near, 
+		T const & left,
+		T const & right,
+		T const & bottom,
+		T const & top,
+		T const & near,
 		T const & far);
 
 	/// Creates a matrix for a symetric perspective-view frustum.
-	/// 
+	///
 	/// @param fovy Expressed in radians if GLM_FORCE_RADIANS is define or degrees otherwise.
-	/// @param aspect 
-	/// @param near 
-	/// @param far 
+	/// @param aspect
+	/// @param near
+	/// @param far
 	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
-	template <typename T> 
+	template <typename T>
 	detail::tmat4x4<T> perspective(
-		T const & fovy, 
-		T const & aspect, 
-		T const & near, 
+		T const & fovy,
+		T const & aspect,
+		T const & near,
 		T const & far);
 
 	/// Builds a perspective projection matrix based on a field of view.
-	/// 
+	///
 	/// @param fov Expressed in radians if GLM_FORCE_RADIANS is define or degrees otherwise.
-	/// @param width 
-	/// @param height 
-	/// @param near 
-	/// @param far 
+	/// @param width
+	/// @param height
+	/// @param near
+	/// @param far
 	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
-	template <typename Real> 
+	template <typename Real>
 	detail::tmat4x4<Real> perspectiveFov(
-		Real const & fov, 
-		Real const & width, 
-		Real const & height, 
-		Real const & near, 
+		Real const & fov,
+		Real const & width,
+		Real const & height,
+		Real const & near,
 		Real const & far);
 
 	/// Creates a matrix for a symmetric perspective-view frustum with far plane at infinite.
-	/// 
+	///
 	/// @param fovy Expressed in radians if GLM_FORCE_RADIANS is define or degrees otherwise.
-	/// @param aspect 
-	/// @param near 
+	/// @param aspect
+	/// @param near
 	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
-    template <typename T> 
+    template <typename T>
 	detail::tmat4x4<T> infinitePerspective(
 		T fovy, T aspect, T near);
 
 	/// Creates a matrix for a symmetric perspective-view frustum with far plane at infinite for graphics hardware that doesn't support depth clamping.
-	/// 
+	///
 	/// @param fovy Expressed in radians if GLM_FORCE_RADIANS is define or degrees otherwise.
-	/// @param aspect 
-	/// @param near 
+	/// @param aspect
+	/// @param near
 	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
-    template <typename T> 
+    template <typename T>
 	detail::tmat4x4<T> tweakedInfinitePerspective(
 		T fovy, T aspect, T near);
 
 	/// Map the specified object coordinates (obj.x, obj.y, obj.z) into window coordinates.
-	/// 
-	/// @param obj 
-	/// @param model 
+	///
+	/// @param obj
+	/// @param model
 	/// @param proj
-	/// @param viewport 
-	/// @tparam T Native type used for the computation. Currently supported: half (not recommanded), float or double.
-	/// @tparam U Currently supported: Floating-point types and integer types.
-	/// @see gtc_matrix_transform
-	template <typename T, typename U> 
-	detail::tvec3<T> project(
-		detail::tvec3<T> const & obj, 
-		detail::tmat4x4<T> const & model, 
-		detail::tmat4x4<T> const & proj, 
-		detail::tvec4<U> const & viewport);
-
-	/// Map the specified window coordinates (win.x, win.y, win.z) into object coordinates.
-	/// 
-	/// @param win 
-	/// @param model 
-	/// @param proj
-	/// @param viewport 
-	/// @tparam T Native type used for the computation. Currently supported: half (not recommanded), float or double.
-	/// @tparam U Currently supported: Floating-point types and integer types.
-	/// @see gtc_matrix_transform
-	template <typename T, typename U> 
-	detail::tvec3<T> unProject(
-		detail::tvec3<T> const & win, 
-		detail::tmat4x4<T> const & model, 
-		detail::tmat4x4<T> const & proj, 
-		detail::tvec4<U> const & viewport);
-
-	/// Define a picking region
-	/// 
-	/// @param center 
-	/// @param delta 
 	/// @param viewport
 	/// @tparam T Native type used for the computation. Currently supported: half (not recommanded), float or double.
 	/// @tparam U Currently supported: Floating-point types and integer types.
 	/// @see gtc_matrix_transform
-	template <typename T, typename U> 
+	template <typename T, typename U>
+	detail::tvec3<T> project(
+		detail::tvec3<T> const & obj,
+		detail::tmat4x4<T> const & model,
+		detail::tmat4x4<T> const & proj,
+		detail::tvec4<U> const & viewport);
+
+	/// Map the specified window coordinates (win.x, win.y, win.z) into object coordinates.
+	///
+	/// @param win
+	/// @param model
+	/// @param proj
+	/// @param viewport
+	/// @tparam T Native type used for the computation. Currently supported: half (not recommanded), float or double.
+	/// @tparam U Currently supported: Floating-point types and integer types.
+	/// @see gtc_matrix_transform
+	template <typename T, typename U>
+	detail::tvec3<T> unProject(
+		detail::tvec3<T> const & win,
+		detail::tmat4x4<T> const & model,
+		detail::tmat4x4<T> const & proj,
+		detail::tvec4<U> const & viewport);
+
+	/// Define a picking region
+	///
+	/// @param center
+	/// @param delta
+	/// @param viewport
+	/// @tparam T Native type used for the computation. Currently supported: half (not recommanded), float or double.
+	/// @tparam U Currently supported: Floating-point types and integer types.
+	/// @see gtc_matrix_transform
+	template <typename T, typename U>
 	detail::tmat4x4<T> pickMatrix(
-		detail::tvec2<T> const & center, 
-		detail::tvec2<T> const & delta, 
+		detail::tvec2<T> const & center,
+		detail::tvec2<T> const & delta,
 		detail::tvec4<U> const & viewport);
 
 	/// Build a look at view matrix.
-	/// 
+	///
 	/// @param eye Position of the camera
 	/// @param center Position where the camera is looking at
 	/// @param up Normalized up vector, how the camera is oriented. Typically (0, 0, 1)
 	/// @see gtc_matrix_transform
 	/// @see - frustum(T const & left, T const & right, T const & bottom, T const & top, T const & nearVal, T const & farVal) frustum(T const & left, T const & right, T const & bottom, T const & top, T const & nearVal, T const & farVal)
-	template <typename T> 
+	template <typename T>
 	detail::tmat4x4<T> lookAt(
-		detail::tvec3<T> const & eye, 
-		detail::tvec3<T> const & center, 
+		detail::tvec3<T> const & eye,
+		detail::tvec3<T> const & center,
 		detail::tvec3<T> const & up);
 
 	/// @}
@@ -1251,10 +1251,10 @@ typedef Matrix4<float> Matrix4f;
 /// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 /// copies of the Software, and to permit persons to whom the Software is
 /// furnished to do so, subject to the following conditions:
-/// 
+///
 /// The above copyright notice and this permission notice shall be included in
 /// all copies or substantial portions of the Software.
-/// 
+///
 /// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 /// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 /// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -1271,7 +1271,7 @@ typedef Matrix4<float> Matrix4f;
 
 namespace glm
 {
-	template <typename T> 
+	template <typename T>
 	GLM_FUNC_QUALIFIER detail::tmat4x4<T> translate
 	(
 		detail::tmat4x4<T> const & m,
@@ -1282,19 +1282,19 @@ namespace glm
 		Result[3] = m[0] * v[0] + m[1] * v[1] + m[2] * v[2] + m[3];
 		return Result;
 	}
-		
-	template <typename T> 
+
+	template <typename T>
 	GLM_FUNC_QUALIFIER detail::tmat4x4<T> rotate
 	(
 		detail::tmat4x4<T> const & m,
-		T const & angle, 
+		T const & angle,
 		detail::tvec3<T> const & v
 	)
 	{
 #ifdef GLM_FORCE_RADIANS
 		T a = angle;
 #else
-		T a = radians(angle);		
+		T a = radians(angle);
 #endif
 		T c = cos(a);
 		T s = sin(a);
@@ -1324,7 +1324,7 @@ namespace glm
 		return Result;
 	}
 
-	template <typename T> 
+	template <typename T>
 	GLM_FUNC_QUALIFIER detail::tmat4x4<T> scale
 	(
 		detail::tmat4x4<T> const & m,
@@ -1339,7 +1339,7 @@ namespace glm
 		return Result;
 	}
 
-	template <typename T> 
+	template <typename T>
 	GLM_FUNC_QUALIFIER detail::tmat4x4<T> translate_slow
 	(
 		detail::tmat4x4<T> const & m,
@@ -1358,12 +1358,12 @@ namespace glm
 		//Result[3][3] = m[0][3] * v[0] + m[1][3] * v[1] + m[2][3] * v[2] + m[3][3];
 		//return Result;
 	}
-		
-	template <typename T> 
+
+	template <typename T>
 	GLM_FUNC_QUALIFIER detail::tmat4x4<T> rotate_slow
 	(
 		detail::tmat4x4<T> const & m,
-		T const & angle, 
+		T const & angle,
 		detail::tvec3<T> const & v
 	)
 	{
@@ -1397,7 +1397,7 @@ namespace glm
 		return m * Result;
 	}
 
-	template <typename T> 
+	template <typename T>
 	GLM_FUNC_QUALIFIER detail::tmat4x4<T> scale_slow
 	(
 		detail::tmat4x4<T> const & m,
@@ -1411,14 +1411,14 @@ namespace glm
 		return m * Result;
 	}
 
-	template <typename Real> 
+	template <typename Real>
 	GLM_FUNC_QUALIFIER detail::tmat4x4<Real> ortho
 	(
-		Real const & left, 
-		Real const & right, 
-		Real const & bottom, 
-		Real const & top, 
-		Real const & zNear, 
+		Real const & left,
+		Real const & right,
+		Real const & bottom,
+		Real const & top,
+		Real const & zNear,
 		Real const & zFar
 	)
 	{
@@ -1432,11 +1432,11 @@ namespace glm
 		return Result;
 	}
 
-	template <typename Real> 
+	template <typename Real>
 	GLM_FUNC_QUALIFIER detail::tmat4x4<Real> ortho(
-		Real const & left, 
-		Real const & right, 
-		Real const & bottom, 
+		Real const & left,
+		Real const & right,
+		Real const & bottom,
 		Real const & top)
 	{
 		detail::tmat4x4<Real> Result(1);
@@ -1448,14 +1448,14 @@ namespace glm
 		return Result;
 	}
 
-	template <typename Real> 
+	template <typename Real>
 	GLM_FUNC_QUALIFIER detail::tmat4x4<Real> frustum
 	(
-		Real const & left, 
-		Real const & right, 
-		Real const & bottom, 
-		Real const & top, 
-		Real const & nearVal, 
+		Real const & left,
+		Real const & right,
+		Real const & bottom,
+		Real const & top,
+		Real const & nearVal,
 		Real const & farVal
 	)
 	{
@@ -1474,9 +1474,9 @@ namespace glm
 	template <typename T, typename U>
 	GLM_FUNC_QUALIFIER detail::tvec3<T> project
 	(
-		detail::tvec3<T> const & obj, 
-		detail::tmat4x4<T> const & model, 
-		detail::tmat4x4<T> const & proj, 
+		detail::tvec3<T> const & obj,
+		detail::tmat4x4<T> const & model,
+		detail::tmat4x4<T> const & proj,
 		detail::tvec4<U> const & viewport
 	)
 	{
@@ -1495,9 +1495,9 @@ namespace glm
 	template <typename T, typename U>
 	GLM_FUNC_QUALIFIER detail::tvec3<T> unProject
 	(
-		detail::tvec3<T> const & win, 
-		detail::tmat4x4<T> const & model, 
-		detail::tmat4x4<T> const & proj, 
+		detail::tvec3<T> const & win,
+		detail::tmat4x4<T> const & model,
+		detail::tmat4x4<T> const & proj,
 		detail::tvec4<U> const & viewport
 	)
 	{
@@ -1514,18 +1514,18 @@ namespace glm
 		return detail::tvec3<T>(obj);
 	}
 
-	template <typename T, typename U> 
+	template <typename T, typename U>
 	detail::tmat4x4<T> pickMatrix
 	(
-		detail::tvec2<T> const & center, 
-		detail::tvec2<T> const & delta, 
+		detail::tvec2<T> const & center,
+		detail::tvec2<T> const & delta,
 		detail::tvec4<U> const & viewport
 	)
 	{
 		assert(delta.x > T(0) && delta.y > T(0));
 		detail::tmat4x4<T> Result(1.0f);
 
-		if(!(delta.x > T(0) && delta.y > T(0))) 
+		if(!(delta.x > T(0) && delta.y > T(0)))
 			return Result; // Error
 
 		detail::tvec3<T> Temp(
